@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* < !-------------------------------------------------- navbar ------------------------------------------------------> */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+nav .logo {
+    width: 20%;
+    margin: 1%;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav .nav-links {
+    width: 40%;
+    /* display: flex; */
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid;
+}
+
+nav .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex; */
+}
+
+nav .nav-links li {
+    list-style-type: none;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+nav .searchbar {
+    width: 20%;
+    overflow: hidden;
+}
+
+nav .searchbar input {
+    width: 70%;
+    padding: 2%;
+    font-size: 1.5rem;
+}
+
+nav .searchbar button {
+    width: 20%;
+    font-size: 2rem;
+    padding: 1.5%;
+    background-color: #7de2d1;
+}
+
+/* < !-------------------------------------------------- navbar ------------------------------------------------------> */
+
+/* < !-------------------------------------------------- header ------------------------------------------------------> */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 35vmax;
+    border: solid black;
+    position: relative;
+}
+
+header .header-1 {
+    width: 30%;
+    /* border: solid; */
+    padding: 5%;
+}
+
+header .header-1 h1 {
+    font-size: 5rem;
+    margin: 2%;
+}
+
+header .header-1 p {
+    font-size: 2rem;
+    margin: 2%;
+}
+
+header .header-1 button {
+    margin-top: 3%;
+    border-radius: 12px;
+    background-color: #7de2d1;
+    padding: 3%;
+    border: none;
+    margin: 2%;
+}
+
+header .header-1 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+header .header-2 {
+    width: 30%;
+    /* border: solid; */
+}
+
+.maindiv {
+    /* width: 100%; */
+    height: 100%;
+    /* background-image: url(https://picsum.photos/id/237/1000/500); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 6s infinite linear;
+    filter: drop-shadow(1px 1px 20px #7de2d1);
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(./img/chef_1-removebg-preview.png);
+
+    }
+
+    25% {
+        background-image: url(./img/chef_2-removebg-preview.png);
+
+    }
+
+    50% {
+        background-image: url(./img/chef_3-removebg-preview.png);
+
+    }
+
+    75% {
+        background-image: url(./img/chef_4-removebg-preview.png);
+
+    }
+
+    100% {
+        background-image: url(./img/chef_5-removebg-preview.png);
+
+    }
+}
+
+/* < !-------------------------------------------------- header ------------------------------------------------------> */
+
+/* < !-------------------------------------------------- why choose us? ------------------------------------------------------> */
+.why-choose-us {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+    z-index: 1;
+    /* border: solid; */
+}
+
+.why-choose-us .choose {
+    width: 20%;
+    text-transform: capitalize;
+    border: solid;
+    font-size: 1.2rem;
+    padding: 1%;
+    background-color: #a1ebde;
+    box-shadow: 0px 4px 8px rgba(130, 232, 240, 0.911);
+    margin-bottom: 3%;
+    border-radius: 18px;
+    height: 13vw;
+}
+
+.why-choose-us .choose i {
+    font-size: 5rem;
+    /* margin: 1%; */
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin: 2%;
+
+}
+
+/* < !-------------------------------------------------- why choose us? ------------------------------------------------------> */
+
+/* < !-------------------------------------------------- about ---------------------------------------------------------------> */
+.about {
+    width: 85%;
+    margin: auto;
+    background-image: url(/img/about-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(2px 2px 20px #7de2d1);
+
+}
+
+.about-us {
+    width: 35%;
+    margin: auto;
+
+}
+
+.about .about-us i {
+    font-size: 5rem;
+    /* margin: 1%; */
+    display: block;
+    text-align: left;
+    margin: auto;
+    margin: 2%;
+}
+
+.about .about-us p {
+    font-size: 2rem;
+    text-align: left;
+    line-height: 1.2em;
+    margin: auto;
+    margin: 2%;
+}
+
+.about .about-us p::first-letter {
+    font-size: 2.5rem;
+}
+
+/* < !-------------------------------------------------- about ---------------------------------------------------------------> */
+
+/* < !-------------------------------------------------- categories ---------------------------------------------------------------> */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns of equal width */
+    grid-gap: 20px;
+    /* Gap between grid items */
+    max-width: 85%;
+    /* Maximum width of the grid container */
+    margin: 2% auto;
+    /* Center the grid container */
+    padding: 2%;
+}
+
+.item {
+    background-color: #fff;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #7de2d1;
+}
+
+/* Different sizes for each item */
+.one {
+    grid-column: span 2;
+    /* Spans 2 columns */
+    grid-row: span 2;
+    /* Spans 2 rows */
+}
+
+.two {
+    grid-column: span 1;
+    /* Spans 1 column */
+    grid-row: span 1;
+    /* Spans 1 row */
+}
+
+.three {
+    grid-column: span 1;
+    /* Spans 1 column */
+    grid-row: span 1;
+    /* Spans 1 row */
+}
+
+.four {
+    grid-column: span 1;
+    /* Spans 1 column */
+    grid-row: span 2;
+    /* Spans 2 rows */
+}
+
+.five {
+    grid-column: span 1;
+    /* Spans 1 column */
+    grid-row: span 1;
+    /* Spans 1 row */
+}
+
+.seven {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.six {
+    grid-column: span 2;
+    /* Spans 2 columns */
+    grid-row: span 1;
+    /* Spans 1 row */
+}
+
+.grid-container .item button {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    /* background-color: ; */
+
+}
+
+.grid-container .item button a {
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    /* background-size: contain; */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* font-weight: 900; */
+    /* -webkit-text-fill-color: transparent; */
+    /* background-size: cover; */
+    /* border: solid; */
+    color: black;
+}
+
+.grid-container .one h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+/* < !-------------------------------------------------- categories ---------------------------------------------------------------> */
+
+/* < !-------------------------------------------------- blogs ---------------------------------------------------------------> */
+.blogs {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.blogs .blog {
+    width: 28%;
+    /* border: solid; */
+    padding: 2%;
+    text-transform: capitalize;
+}
+
+.blogs .two {
+    text-align: center;
+
+}
+
+.blogs .two h3 {
+    font-size: 4rem;
+}
+
+.blogs .two h1 {
+    font-size: 6rem;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    color: #7de2d1;
+}
+
+.blog-card h1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    /* margin-top: 3%; */
+}
+
+.blog-card h1 {
+    margin-top: 2%;
+}
+
+.blogs .one .blog-card,
+.blogs .three .blog-card {
+    width: 90%;
+    margin: auto;
+    padding: 6%;
+    border: solid;
+    margin-top: 5%;
+}
+
+.blog-card details {
+    font-size: 2rem;
+}
+
+.blog-card img {
+    width: 100%;
+    /* padding: 3%; */
+    /* margin: auto; */
+}
+
+/* < !-------------------------------------------------- blogs ---------------------------------------------------------------> */
+
+/* < !-------------------------------------------------- comments / raings / ads / social sharing ---------------------------------------------------------------> */
+/* comments */
+
+#rating {
+    margin-bottom: 10px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comment button {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* comments */
+
+/* ads */
+
+/* ads */
+
+
+/* < !-------------------------------------------------- comments / raings / ads / social sharing ---------------------------------------------------------------> */
