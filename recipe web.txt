@@ -1,5 +1,5 @@
 done .....  1.homepage:navbar(home,recipes,categories,about us,contact us) ; searchbar ; popular or new recipes ka section.
 2.recipes page:ingredients list ; instructions ; photos/videos ; nutritional info ; serving size / cook time.
-3.comments + ratings section ; social sharing buttons.
+done .... 3.comments + ratings section ; social sharing buttons.
 4.footer
-5.ads
+done .... 5.ads
